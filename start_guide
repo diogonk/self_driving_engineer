@@ -1,0 +1,19 @@
+1. Create a virtual env:
+https://docs.python.org/3/library/venv.html
+python3 -m venv /path/to/new/virtual/environment
+
+2. install opencv
+sudo apt update
+sudo apt install python3-opencv
+
+3. Copy opencv library
+cp /usr/lib/python3/dist-packages/cv2.cpython-36m-x86_64-linux-gnu.so ./lib/python3.6/site-packages/
+
+4. source bin/activate
+deactivate
+
+Problems:
+    https://stackoverflow.com/questions/56656777/userwarning-matplotlib-is-currently-using-agg-which-is-a-non-gui-backend-so
+    sudo apt-get install python3-tk
+
+    pip install Image
